@@ -1,0 +1,31 @@
+version: 2
+jobs:
+    # The build job
+    build:
+        working_directory: ~/project
+        docker:
+            - image: circleci/node:10.10.0-browsers
+        steps:
+            - checkout
+            - run:
+                name: Show current branch
+                command: echo ${CIRCLE_BRANCH}
+            - restore_cache:
+                keys:
+                - v1-dependencies-{{ checksum "package.json" }}
+                - v1-dependencies-
+            - run:
+                name: Install local dependencies
+                command: npm install
+            - save_cache:
+                key: v1-dependencies-{{ checksum "package.json" }}
+                paths:
+                    - node_modules
+            # Lint the source code
+            - run:
+                name: Linting
+                command: npm run lint
+            # Test the source code
+            - run:
+                name: Testing
+                command: npm run test
