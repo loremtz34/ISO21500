@@ -3,18 +3,20 @@
   <nav id="sidebar">
     <div class="sidebar-header">
       <div class="logo">
-        <img src="../assets/img/logo-udc.png" alt="Logo UDC">
+        <a routerLink="/">
+          <img src="../assets/img/logo-udc.png" alt="Logo UDC">
+        </a>
       </div>
     </div>
     <ul class="list-unstyled components">
       <li>
-        <a href="#">INTEGRACION</a>
-        <ul>
+        <a href="#submenuIntegracion" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">INTEGRACION</a>
+        <ul class="list-unstyled collapse" id="submenuIntegracion">
           <li>
-            <a href="">Acta de Constitución</a>
+            <a routerLink="/integracion/actaconstitucion" routerLinkActive="active">Acta de Constitución</a>
           </li>
           <li>
-            <a href="">Planificación  de Proyecto</a>
+            <a href="">Planificación de Proyecto</a>
           </li>
           <li>
             <a href="">Cambios</a>
@@ -23,8 +25,9 @@
             <a href="">Acta de Riesgo</a>
           </li>
           <li>
-            <a href="">Plan de Configuración</a>
-            <ul>
+            <a href="#pdc" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Plan de
+              Configuración</a>
+            <ul class="list-unstyled collapse" id="pdc">
               <li>
                 <a href="">
                   Gestión de la configuración 1
@@ -43,8 +46,8 @@
         </ul>
       </li>
       <li>
-        <a href="#">RECURSOS</a>
-        <ul>
+        <a href="#submenuRecursos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">RECURSOS</a>
+        <ul class="list-unstyled collapse" id="submenuRecursos">
           <li>
             <a href="">Equipos</a>
           </li>
@@ -75,32 +78,16 @@
   <div id="content">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Gesprotic</a>
-        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" id="btnSidebar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="btn btn-dark d-inline-block d-lg-none" id="btnSidebar" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Page</a>
-            </li>
-          </ul>
-        </div>
+        <a class="navbar-brand" href="#">Gesprotic</a>
       </div>
     </nav>
 
     <div class="wrap-container">
-      HOLA!
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
