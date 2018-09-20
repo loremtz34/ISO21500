@@ -185,7 +185,10 @@ form.table-form > .row > div {
 form.table-form > .row > div:nth-child(2) {
     border-left: 1px solid $color-black;
 }
-
+.table-form > h2 {
+    text-align: center;
+    margin: 32px;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
