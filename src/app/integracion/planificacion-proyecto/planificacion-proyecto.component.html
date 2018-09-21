@@ -1,0 +1,152 @@
+<div class="container">
+  <form [formGroup]="todo" (ngSubmit)="logForm()" class="table-form">
+    <div class="row">
+      <div class="col offset-md-6">
+        <div class="form-group row">
+          <label for="inputDate" class="col-sm-5 col-form-label">Código Identificación Proyecto</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        Director/Rpble. del Proyecto
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        REVISIÓN
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona1</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Firma</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        APROBACIÓN
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona2</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Firma</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2><b>PLAN DIRECTOR DEL PROYECTO</b></h2>
+    <h6>CICLO DE VIDA: FASES Y PROCESOS DEL PROYECTO</h6>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>FASES</th>
+            <th>PROCESOS</th>
+            <th>ENTRADAS</th>
+            <th>SALIDAS</th>
+            <th>INTERACIÓN<br>DEPENDENCIAS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h6>LINEA BASE DE TIEMPO / CRONOGRAMA</h6>
+    <div class="row">
+      <div class="col-sm-4">
+          <label for="personaResponsable" class="col-form-label">Gestión de Cronograma</label>
+      </div>
+      <div class="col-sm-4">
+          <label for="personaResponsable" class="col-form-label">Umbral de variación</label>
+      </div>
+      <div class="col-sm-4">
+          <label for="personaResponsable" class="col-form-label">Seguimiento y control</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <textarea name="" id="" rows="2" class="form-control" placeholder="Procedimientos de gestión"></textarea>
+      </div>
+      <div class="col-sm-4">
+          <textarea name="" id="" rows="2" class="form-control" placeholder="Procedimientos de gestión"></textarea>
+        </div>
+        <div class="col-sm-4">
+            <textarea name="" id="" rows="2" class="form-control" placeholder="Procedimientos de gestión"></textarea>
+          </div>
+    </div>
+  </form>
+</div>
