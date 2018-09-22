@@ -6,6 +6,8 @@ import { ActaConstitucionComponent } from './integracion/acta-constitucion/acta-
 import { HomeComponent } from './home/home.component';
 import { PlanificacionProyectoComponent } from './integracion/planificacion-proyecto/planificacion-proyecto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GestionConfiguracionUnoComponent } from './integracion/gestion-configuracion-uno/gestion-configuracion-uno.component';
+import { GestionConfiguracionDosComponent } from './integracion/gestion-configuracion-dos/gestion-configuracion-dos.component';
 const appRoutes = [
     {
         path: '',
@@ -25,6 +27,12 @@ const appRoutes = [
             }, {
                 path: 'planificacion',
                 component: PlanificacionProyectoComponent
+            }, {
+                path: 'gestionconfiguno',
+                component: GestionConfiguracionUnoComponent
+            }, {
+                path: 'gestionconfigdos',
+                component: GestionConfiguracionDosComponent
             }
         ]
     }
@@ -34,14 +42,15 @@ const appRoutes = [
         AppComponent,
         ActaConstitucionComponent,
         HomeComponent,
-        PlanificacionProyectoComponent
+        PlanificacionProyectoComponent,
+        GestionConfiguracionUnoComponent,
+        GestionConfiguracionDosComponent
     ],
     imports: [
         FormsModule,
         ReactiveFormsModule,
         RouterModule.forRoot(
-            appRoutes,
-            { enableTracing: true }
+            appRoutes
         ),
         BrowserModule,
     ],

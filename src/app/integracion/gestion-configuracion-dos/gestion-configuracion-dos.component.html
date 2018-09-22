@@ -1,0 +1,255 @@
+<div class="container">
+  <form class="table-form" [formGroup]="todo" (ngSubmit)="logForm()">
+    <div class="row">
+      <div class="col offset-md-6">
+        <div class="form-group row">
+          <label for="inputDate" class="col-sm-5 col-form-label">Código Identificación Proyecto</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        Director/Rpble. del Proyecto
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        APROBACIÓN
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona / Comité</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Firma</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2><b>PLAN DE GESTIÓN DE CONFIGURACIÓN</b></h2>
+    <div class="row">
+      <b>OBJETIVOS Y ALCANCE DEL PLAN</b>
+    </div>
+    <div class="row">
+      <textarea name="" id="" rows="5" class="form-control" placeholder="Si existen o son decisiones que no pueden tomarse en el momento de realizar el plan director del proyecto"></textarea>
+    </div>
+    <br>
+    <div class="row">
+      <label for="" class="col-form-label">
+        <b>RESPONSABILIDADES DE GESTIÓN DE LA CONFIGURACIÓN</b>
+      </label>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ROL A DESEMPEÑAR</th>
+            <th>FUNCIONES Y RESPONSABILIDADES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="row">
+      <label for="" class="col-form-label">
+        <b>ELEMENTOS / ENTREGABLES SOMETIDOS AL CONTROL DE CONFIGURACIÓN</b>
+      </label>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Elemento (ítem) / Entregables</th>
+            <th>Normas de identificación y<br>versionado</th>
+            <th>Responsable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="row">
+      <label for="" class="col-form-label">
+        <b>DOCUMENTOS SOMETIDOS AL CONTROL DE CONFIGURACIÓN</b>
+      </label>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Documento</th>
+            <th>Normas de identificación y<br>versionado</th>
+            <th>Responsable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="row">
+      <label for="" class="col-form-label">
+        <b>SISTEMA / PROCEDIMIENTO PARA EL CONTROL DE CAMBIOS</b>
+      </label>
+    </div>
+    <div class="row">
+      <textarea name="" rows="5" class="form-control"></textarea>
+    </div>
+    <div class="row">
+      <label for="" class="col-form-label">
+        <b>PLAN DE GESTIÓN DE CAMBIOS</b>
+      </label>
+    </div>
+    <div class="row">
+      <label for="" class="col-sm-3">Código del documento</label>
+      <div class="col-sm-3 br">
+        <input type="text" class="form-control">
+      </div>
+      <label for="" class="col-form-label col-sm-3 br">Fecha aprobación</label>
+      <div class="col-sm-3">
+        <input type="date" class="form-control">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <label for="" class="col-form-label">
+        <b>PROCEDIMIENTO DE COMUNICACIÓN DE CAMBIOS A LOS INTERESADOS</b>
+      </label>
+    </div>
+    <div class="row">
+      <textarea name="" rows="5" class="form-control"></textarea>
+    </div>
+    <br>
+
+    <div class="row">
+      <label for="" class="col-form-label">
+        <b>PROCEDIMIENTO Y NIVELES DE APROBACIÓN EN GESTIÓN DE LA CONFIGURACÍÓN</b>
+      </label>
+    </div>
+    <div class="row">
+      <textarea name="" rows="5" class="form-control"></textarea>
+    </div>
+    <br>
+
+    <div class="row">
+      <label for="" class="col-form-label">
+        <b>PROCEDIMIENTO DE AUDITORÍA EN LA GESTIÓN DE LA CONFIGURACÍÓN</b>
+      </label>
+    </div>
+    <div class="row">
+      <textarea name="" rows="5" class="form-control"></textarea>
+    </div>
+    <br>
+    <h6>DOCUMENTOS Y LÍNEAS BASE ADJUNTAS A ESTE PLAN DIRECTOR</h6>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>DOCUMENTO</th>
+            <th>Descripción / Resumen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id=""></td>
+            <td><input type="text" class="form-control" id=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+</div>

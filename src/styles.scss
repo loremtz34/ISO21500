@@ -175,7 +175,7 @@ ul.CTAs a {
 }
 
 form.table-form > .row {
-    border: 1px solid $color-black;
+    border: 1px solid $border-form-color;
 }
 
 form.table-form > .row > div {
@@ -183,11 +183,14 @@ form.table-form > .row > div {
 }
 
 form.table-form > .row > div:nth-child(2) {
-    border-left: 1px solid $color-black;
+    border-left: 1px solid $border-form-color;
 }
 .table-form > h2 {
     text-align: center;
     margin: 32px;
+}
+.br{
+    border-right: 1px solid $border-form-color;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
