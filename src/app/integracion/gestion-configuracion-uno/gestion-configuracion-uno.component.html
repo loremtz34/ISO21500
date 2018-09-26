@@ -1,3 +1,179 @@
-<p>
-  gestion-configuracion-uno works!
-</p>
+<div class="container">
+  <form class="table-form" [formGroup]="todo" (ngSubmit)="logForm()">
+    <div class="row">
+      <div class="col offset-md-6">
+        <div class="form-group row">
+          <label for="inputDate" class="col-sm-5 col-form-label">Código Identificación Proyecto</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        Director/Rpble. del Proyecto
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        APROBACIÓN
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona / Comité</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Firma</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h6>Roles de la gestión de la configuración:</h6>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Nombre del rol</th>
+            <th>Persona asignada </th>
+            <th>Responsabilidades</th>
+            <th>Niveles de autoridad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <h6>Plan de documentación:</h6>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <td>Documentos</td>
+            <td>Formato</td>
+            <td>Acceso rápido Necesario</td>
+            <td>Disponibilidad amplia Necesaria</td>
+            <td>Seguridad Acceso</td>
+            <td>Recuperación Información</td>
+            <td>Retención información</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <h6><b>Items de configuración:</b><i>Objetos del proyecto sober los cuales se establecerán y mantendrán
+        descripciones línea base de los atributos funcionales y físicos, con elf in de mantener control de los cambios
+        que los afectan</i></h6>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Código del Item de configuración</th>
+            <th>Nombre del Item de configuración</th>
+            <th>Categoría <br> <small>(1=físico,2=documento,3=formato,4=registro)</small></th>
+            <th>Fuente <br><small>(P=proyecto,C=contratista,V=proveedor,E=empresa)</small></th>
+            <th>Formato <br>(Software + versión + Plataforma)</th>
+            <th>Formato <br>(Software + versión + Plataforma)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="row">
+      <h6><b>Gestión del cambio:</b><i>especificar el proceso de gestión del cambio o anexar el plan de gestión del
+          cambio</i></h6>
+      <input type="text" class="form-control">
+    </div>
+    <br>
+    <div class="row">
+      <h6><b>Contabilidad de estado y métricas de configuración:</b> <i>espeficicar el repositorio de información,
+          el reporte de estado y métricas a usar</i></h6>
+      <input type="text" class="form-control">
+    </div>
+    <br>
+    <div class="row">
+      <h6><b>Verificación y auditorías de configuración:</b><i>especificar como se asegurará la composición de los
+          items de configuración, y como se asegurará el correcto registro, evaluación, aprovación</i></h6>
+      <div class="col-sm-12">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+  </form>
+</div>
