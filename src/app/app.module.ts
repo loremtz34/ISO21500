@@ -8,6 +8,9 @@ import { PlanificacionProyectoComponent } from './integracion/planificacion-proy
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GestionConfiguracionUnoComponent } from './integracion/gestion-configuracion-uno/gestion-configuracion-uno.component';
 import { GestionConfiguracionDosComponent } from './integracion/gestion-configuracion-dos/gestion-configuracion-dos.component';
+import { MostrarComponent } from './integracion/cambios/mostrar/mostrar.component';
+import { CrearComponent } from './integracion/cambios/crear/crear.component';
+import { ActaRiesgoComponent } from './integracion/acta-riesgo/acta-riesgo.component';
 const appRoutes = [
     {
         path: '',
@@ -33,6 +36,19 @@ const appRoutes = [
             }, {
                 path: 'gestionconfigdos',
                 component: GestionConfiguracionDosComponent
+            },
+            {
+                path: 'cambios',
+                children: [
+                    {
+                        path: '',
+                        component: MostrarComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: CrearComponent
+                    }
+                ]
             }
         ]
     }
@@ -44,7 +60,10 @@ const appRoutes = [
         HomeComponent,
         PlanificacionProyectoComponent,
         GestionConfiguracionUnoComponent,
-        GestionConfiguracionDosComponent
+        GestionConfiguracionDosComponent,
+        MostrarComponent,
+        CrearComponent,
+        ActaRiesgoComponent
     ],
     imports: [
         FormsModule,
