@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class ActaConstitucionComponent implements OnInit {
   private todo: FormGroup;
-  constructor(private formBuilder: FormBuilder,) {
+  constructor(private formBuilder: FormBuilder, ) {
     this.todo = this.formBuilder.group({
       fecha: ''
     });
@@ -15,7 +15,7 @@ export class ActaConstitucionComponent implements OnInit {
 
   ngOnInit() {
   }
-  logForm(){
+  logForm() {
     console.log(this.todo.value);
   }
 }

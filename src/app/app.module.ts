@@ -11,6 +11,7 @@ import { GestionConfiguracionDosComponent } from './integracion/gestion-configur
 import { MostrarComponent } from './integracion/cambios/mostrar/mostrar.component';
 import { CrearComponent } from './integracion/cambios/crear/crear.component';
 import { ActaRiesgoComponent } from './integracion/acta-riesgo/acta-riesgo.component';
+import { NgProgressModule } from '@ngx-progressbar/core';
 const appRoutes = [
     {
         path: '',

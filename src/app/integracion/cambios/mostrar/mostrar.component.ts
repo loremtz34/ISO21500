@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'abe-mostrar',
   templateUrl: './mostrar.component.html',
@@ -7,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MostrarComponent implements OnInit {
 
+  completionPercent: 20;
   constructor() { }
 
   ngOnInit() {
