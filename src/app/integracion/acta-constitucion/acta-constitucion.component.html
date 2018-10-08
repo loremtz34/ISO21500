@@ -13,7 +13,7 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+        <input type="text" class="form-control" formControlName="nombre" placeholder="Titulo del Proyecto">
       </div>
     </div>
     <div class="row">
@@ -23,7 +23,7 @@
       <div class="col-sm-9">
         <div class="row">
           <div class="col-sm-12">
-            <input type="text" class="form-control" id="nombreCliente">
+            <input type="text" class="form-control" formControlName="cliente" id="nombreCliente">
           </div>
         </div>
         <div class="row">
@@ -48,7 +48,7 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" class="form-control" formControlName="patrocinador" id="personaResponsable" placeholder="Persona">
           </div>
         </div>
         <div class="row">
@@ -80,15 +80,15 @@
     </div>
     <br>
     <div class="row">
-      <label for="departamento" class="col-sm-3 col-form-label">Cód. Identif. Proyec</label>
+      <label for="departamento"  class="col-sm-3 col-form-label">Cód. Identif. Proyec</label>
       <div class="col-sm-9">
         <div class="col">
-          <input type="text" class="form-control" id="departamento" placeholder="Codigo proyecto">
+          <input type="text" formControlName="codigo_identificacion" class="form-control"  id="departamento" placeholder="Codigo proyecto">
         </div>
         <div class="col">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
+            <input class="form-check-input" formControlName="pendiente_asignacion" type="checkbox" value="" id="defaultCheck1" >
+            <label class="form-check-label"  for="defaultCheck1">
               Pendiente asignación
             </label>
           </div>
@@ -100,7 +100,7 @@
       <div class="col-sm-9">
         <div class="col-sm-3">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <input class="form-check-input" formControlName="contrato" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
               Contrato
             </label>
@@ -108,7 +108,7 @@
         </div>
         <div class="col-sm-3">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <input class="form-check-input" formControlName="caso_de_negocio" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
               Caso negocio
             </label>
@@ -116,7 +116,7 @@
         </div>
         <div class="col-sm-3">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <input class="form-check-input" formControlName="enunciado_trabajo" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
               Enunciado trabajo
             </label>
@@ -126,11 +126,11 @@
     </div>
     <h2><b>INFORMACIÓN PREVIA:</b></h2>
     <div class="row">
-      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>VISIÓN ESTRATÉGIGA/JUSTIFICACIÓN DEL PROYECTO</b></label>
+      <label for="tituloProyecto"  class="col-sm-12 col-form-label"><b>VISIÓN ESTRATÉGIGA/JUSTIFICACIÓN DEL PROYECTO</b></label>
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <br>
@@ -139,7 +139,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="descripcion_del_proyecto" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <br>
@@ -148,7 +148,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="analisis_de_viabilidad" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <br>
@@ -157,7 +157,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="requisitos_generales" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <h2><b>OBJETIVOS DEL PROYECTO</b></h2>
@@ -168,13 +168,13 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">OBJETIVOS</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="objetivos_alcance" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">MÉTRICA / CRITERIOS DE ACEPTACIÓN</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="metrica_alcance" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
@@ -185,7 +185,7 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" formControlName="aprobacion_persona_alcance" class="form-control" id="personaResponsable" placeholder="Persona">
           </div>
         </div>
         <div class="row">
@@ -204,13 +204,13 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">OBJETIVOS</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="obejtivos_plazo" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">MÉTRICA / CRITERIOS DE ACEPTACIÓN</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="metrica_plazo" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
@@ -221,7 +221,7 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" class="form-control" formControlName="aprobacion_persona_plazo" id="personaResponsable" placeholder="Persona">
           </div>
         </div>
         <div class="row">
@@ -240,13 +240,13 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">OBJETIVOS</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="obejtivos_presupuesto" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">MÉTRICA / CRITERIOS DE ACEPTACIÓN</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="metrica_presupuesto" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
@@ -257,7 +257,7 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" formControlName="aprobacion_persona_presupuesto" class="form-control" id="personaResponsable" placeholder="Persona">
           </div>
         </div>
         <div class="row">
@@ -278,13 +278,13 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">OBJETIVOS</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="obejtivos_calidad" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">MÉTRICA / CRITERIOS DE ACEPTACIÓN</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="metrica_calidad" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
@@ -295,7 +295,7 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" formControlName="aprobacion_persona_calidad" class="form-control" id="personaResponsable" placeholder="Persona">
           </div>
         </div>
         <div class="row">
@@ -314,13 +314,13 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">OBJETIVOS</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="obejtivos_otros" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">MÉTRICA / CRITERIOS DE ACEPTACIÓN</label>
       <div class="col-sm-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="metrica_otros" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="row">
@@ -331,7 +331,7 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" formControlName="aprobacion_persona_otros" class="form-control" id="personaResponsable" placeholder="Persona">
           </div>
         </div>
         <div class="row">
@@ -530,30 +530,6 @@
             <td><input type="text" class="form-control" id=""></td>
             <td><input type="text" class="form-control" id=""></td>
           </tr>
-          <tr>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-          </tr>
-          <tr>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-          </tr>
-          <tr>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-          </tr>
-          <tr>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-            <td><input type="text" class="form-control" id=""></td>
-          </tr>
         </tbody>
       </table>
     </div>
@@ -563,7 +539,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="departamentos_implicados" formnameid="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <br>
@@ -572,7 +548,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="factores_criticos_de_exito" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <br>
@@ -581,7 +557,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" formControlName="observaciones" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <br>
@@ -601,25 +577,25 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-4 col-form-label">MÁXIMA DESVIACIÓN SOBRE PRESUPUESTO</label>
       <div class="col-sm-8">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="form-control" formControlName="maxima_desviacion_sobre_presupuesto" id="exampleFormControlTextarea1" rows="2"></textarea>
       </div>
     </div>
     <div class="row">
       <label for="tituloProyecto" class="col-sm-4 col-form-label">UMBRAL DE RIESGO ACEPTABLE</label>
       <div class="col-sm-8">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="form-control" formControlName="umbral_de_riesgo_aceptable" id="exampleFormControlTextarea1" rows="2"></textarea>
       </div>
     </div>
     <div class="row">
       <label for="tituloProyecto" class="col-sm-4 col-form-label">CAPACIDAD TÉCNICA DE DECISIÓN</label>
       <div class="col-sm-8">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="form-control" formControlName="capacidad_tecnica_de_desicion" id="exampleFormControlTextarea1" rows="2"></textarea>
       </div>
     </div>
     <div class="row">
       <label for="tituloProyecto" class="col-sm-4 col-form-label">VOLUMEN DE CONTRATACIÓN</label>
       <div class="col-sm-8">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="form-control" formControlName="volumen_de_contratacion" id="exampleFormControlTextarea1" rows="2"></textarea>
       </div>
     </div>
     <div class="row">
@@ -628,7 +604,7 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" formControlName="persona_nivel_superior_de_desicion" class="form-control" id="personaResponsable" placeholder="Persona">
           </div>
         </div>
         <div class="row">
