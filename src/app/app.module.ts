@@ -14,6 +14,8 @@ import { ActaRiesgoComponent } from './integracion/acta-riesgo/acta-riesgo.compo
 import { ListarEquiposComponent } from './recursos/equipos/listar-equipos/listar-equipos.component';
 import { CrearEquipoComponent } from './recursos/equipos/crear-equipo/crear-equipo.component';
 import { ModalModule } from 'ngx-bootstrap';
+import { ListarRecursosComponent } from './recursos/listar-recursos/listar-recursos.component';
+import { CrearRecursosComponent } from './recursos/crear-recursos/crear-recursos.component';
 const appRoutes = [
     {
         path: '',
@@ -77,6 +79,17 @@ const appRoutes = [
                         component: CrearEquipoComponent
                     }
                 ]
+            }, {
+                path: 'recursos',
+                children: [
+                    {
+                        path: '',
+                        component: ListarRecursosComponent
+                    },{
+                        path: 'crear',
+                        component: CrearRecursosComponent
+                    }
+                ]
             }
         ]
     }
@@ -93,7 +106,9 @@ const appRoutes = [
         CrearComponent,
         ActaRiesgoComponent,
         ListarEquiposComponent,
-        CrearEquipoComponent
+        CrearEquipoComponent,
+        ListarRecursosComponent,
+        CrearRecursosComponent
     ],
     imports: [
         ModalModule.forRoot(),
