@@ -11,7 +11,9 @@ import { GestionConfiguracionDosComponent } from './integracion/gestion-configur
 import { MostrarComponent } from './integracion/cambios/mostrar/mostrar.component';
 import { CrearComponent } from './integracion/cambios/crear/crear.component';
 import { ActaRiesgoComponent } from './integracion/acta-riesgo/acta-riesgo.component';
-
+import { ListarEquiposComponent } from './recursos/equipos/listar-equipos/listar-equipos.component';
+import { CrearEquipoComponent } from './recursos/equipos/crear-equipo/crear-equipo.component';
+import { ModalModule } from 'ngx-bootstrap';
 const appRoutes = [
     {
         path: '',
@@ -56,6 +58,27 @@ const appRoutes = [
                 component: ActaRiesgoComponent
             }
         ]
+    },
+    {
+        path: 'recursos',
+        children: [
+            {
+                path: '',
+                redirectTo: 'equipos',
+                pathMatch: 'full'
+            }, {
+                path: 'equipos',
+                children: [
+                    {
+                        path: '',
+                        component: ListarEquiposComponent
+                    }, {
+                        path: 'crear',
+                        component: CrearEquipoComponent
+                    }
+                ]
+            }
+        ]
     }
 ];
 @NgModule({
@@ -68,9 +91,12 @@ const appRoutes = [
         GestionConfiguracionDosComponent,
         MostrarComponent,
         CrearComponent,
-        ActaRiesgoComponent
+        ActaRiesgoComponent,
+        ListarEquiposComponent,
+        CrearEquipoComponent
     ],
     imports: [
+        ModalModule.forRoot(),
         FormsModule,
         ReactiveFormsModule,
         RouterModule.forRoot(
