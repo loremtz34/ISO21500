@@ -192,6 +192,9 @@ form.table-form > .row > div:nth-child(2) {
 .br{
     border-right: 1px solid $border-form-color;
 }
+.nbr{
+    border-left: 0px !important;
+}
 h6{
     margin: 10px;
 }

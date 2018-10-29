@@ -1,0 +1,128 @@
+<div class="container">
+  <form class="table-form" [formGroup]="todo" (ngSubmit)="logForm()">
+    <div class="row">
+      <div class="col offset-md-4">
+        <div class="form-group row">
+          <label for="inputDate" class="col-sm-4 col-form-label">Código Identific. Proyecto</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputDate" formControlName="fecha">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" formControlName="nombre" placeholder="Titulo del Proyecto">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        CLIENTE/PETICIONARIO
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" formControlName="cliente" id="nombreCliente">
+          </div>
+        </div>
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona/Rpble. Cliente</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona Responsable">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <h6><b>ACUERDO DE EQUIPO</b></h6>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>PRINCIPIOS Y VALORES (de la organización / del
+          equipo)</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>DIRECTRICES DE COMUNICACIÓN</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>DIRECTRICES DE REUNIÓN / CONGREGACIÓN</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>PROCESO DE TOMA DE DECISIONES</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>DIRECTRICES PARA AFRONTAR CONFLICTOS</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>COMPROMISOS Y ACUERDOS EXTERNOS AL EQUIPO</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>OTROS ACUERDOS</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <h6><b>ACEPTACIÓN DEL ACUERDO</b></h6>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" class="form-control"></td>
+          <td><input type="text" class="form-control"></td>
+          <td><input type="text" class="form-control"></td>
+          <td><input type="text" class="form-control"></td>
+          <td><input type="text" class="form-control"></td>
+          <td><input type="text" class="form-control"></td>
+          <td><input type="text" class="form-control"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

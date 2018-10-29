@@ -1,0 +1,114 @@
+<div class="container">
+  <form class="table-form" [formGroup]="todo" (ngSubmit)="logForm()">
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        Código del proyecto
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <div class="col-sm-5 br">
+            <input type="text" class="form-control" id="departamento" placeholder="">
+          </div>
+          <label for="tituloProyecto" class="col-sm-1 col-form-label">FECHA</label>
+          <div class="col-sm-6">
+            <input type="date" class="form-control" id="departamento" placeholder="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        Director/Responsable del proyecto
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona Responsable">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="departamento" class="col-form-label">Código de la actividad:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+      <div class="col-sm-8">
+        <label for="departamento" class="col-form-label">Actividad:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label for="departamento" class="col-form-label">Descripción del trabajo:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <label for="departamento" class="col-form-label ">Actividad Predecesora:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+      <div class="col-sm-2 nbr">
+        <label for="departamento" class="col-form-label">Relaciones Lógicas:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+      <div class="col-sm-2 br">
+        <label for="departamento" class="col-form-label">Adelantos o Retrasos:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+      <div class="col-sm-2">
+        <label for="departamento" class="col-form-label">Actividad Sucesora:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+      <div class="col-sm-2">
+        <label for="departamento" class="col-form-label">Relaciones Lógicas:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+      <div class="col-sm-2">
+        <label for="departamento" class="col-form-label">Adelantos o Retrasos:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="departamento" class="col-form-label">Nombre y tipo de recurso requerido:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+      <div class="col-sm-4 br">
+        <label for="departamento" class="col-form-label">Habilidades requeridas:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+      <div class="col-sm-4">
+        <label for="departamento" class="col-form-label">Otros recursos requeridos:</label>
+        <input type="text" class="form-control" id="departamento" placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label for="" class="col-form-label">Nivel de esfuerzo</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label for="" class="col-form-label">Supuestos</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+  </form>
+</div>

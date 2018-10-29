@@ -16,6 +16,9 @@ import { CrearEquipoComponent } from './recursos/equipos/crear-equipo/crear-equi
 import { ModalModule } from 'ngx-bootstrap';
 import { ListarRecursosComponent } from './recursos/listar-recursos/listar-recursos.component';
 import { CrearRecursosComponent } from './recursos/crear-recursos/crear-recursos.component';
+import { OrganizacionProyectoComponent } from './recursos/organizacion-proyecto/organizacion-proyecto.component';
+import { ListarActividadesComponent } from './recursos/actividades/listar-actividades/listar-actividades.component';
+import { CrearActividadesComponent } from './recursos/actividades/crear-actividades/crear-actividades.component';
 const appRoutes = [
     {
         path: '',
@@ -85,9 +88,23 @@ const appRoutes = [
                     {
                         path: '',
                         component: ListarRecursosComponent
-                    },{
+                    }, {
                         path: 'crear',
                         component: CrearRecursosComponent
+                    }
+                ]
+            }, {
+                path: 'organizacionproyecto',
+                component: OrganizacionProyectoComponent
+            }, {
+                path: 'actividades',
+                children: [
+                    {
+                        path: '',
+                        component: ListarActividadesComponent
+                    },{
+                        path: 'crear',
+                        component: CrearActividadesComponent
                     }
                 ]
             }
@@ -108,7 +125,10 @@ const appRoutes = [
         ListarEquiposComponent,
         CrearEquipoComponent,
         ListarRecursosComponent,
-        CrearRecursosComponent
+        CrearRecursosComponent,
+        OrganizacionProyectoComponent,
+        ListarActividadesComponent,
+        CrearActividadesComponent
     ],
     imports: [
         ModalModule.forRoot(),
