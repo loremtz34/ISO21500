@@ -19,6 +19,8 @@ import { CrearRecursosComponent } from './recursos/crear-recursos/crear-recursos
 import { OrganizacionProyectoComponent } from './recursos/organizacion-proyecto/organizacion-proyecto.component';
 import { ListarActividadesComponent } from './recursos/actividades/listar-actividades/listar-actividades.component';
 import { CrearActividadesComponent } from './recursos/actividades/crear-actividades/crear-actividades.component';
+import { GestionEquiposComponent } from './recursos/gestion-equipos/gestion-equipos.component';
+import { DesarrolloEquiposComponent } from './recursos/desarrollo-equipos/desarrollo-equipos.component';
 const appRoutes = [
     {
         path: '',
@@ -107,6 +109,12 @@ const appRoutes = [
                         component: CrearActividadesComponent
                     }
                 ]
+            },{
+                path: 'gestionequipo',
+                component: GestionEquiposComponent
+            },{
+                path: 'desarrolloequipo',
+                component: DesarrolloEquiposComponent
             }
         ]
     }
@@ -128,7 +136,9 @@ const appRoutes = [
         CrearRecursosComponent,
         OrganizacionProyectoComponent,
         ListarActividadesComponent,
-        CrearActividadesComponent
+        CrearActividadesComponent,
+        GestionEquiposComponent,
+        DesarrolloEquiposComponent
     ],
     imports: [
         ModalModule.forRoot(),
