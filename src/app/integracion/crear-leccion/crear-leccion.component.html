@@ -1,0 +1,42 @@
+<div class="container">
+  <form class="table-form" [formGroup]="todo" (ngSubmit)="logForm()">
+    <div class="row col-md-6">
+      <div class="col">
+        <div class="form-group row">
+          <label for="inputDate" class="col-sm-2 col-form-label">Nombre</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDate" formControlName="fecha">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group row">
+          <label for="inputDate" class="col-sm-2 col-form-label">Objetivo</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDate" formControlName="fecha">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>DESCRIPCIÓN</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-12 col-form-label"><b>INFORME</b></label>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <textarea class="form-control" formControlName="vision_estrategica" id="exampleFormControlTextarea1" rows="10"></textarea>
+      </div>
+    </div>
+  </form>
+</div>

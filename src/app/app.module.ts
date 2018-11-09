@@ -21,6 +21,12 @@ import { ListarActividadesComponent } from './recursos/actividades/listar-activi
 import { CrearActividadesComponent } from './recursos/actividades/crear-actividades/crear-actividades.component';
 import { GestionEquiposComponent } from './recursos/gestion-equipos/gestion-equipos.component';
 import { DesarrolloEquiposComponent } from './recursos/desarrollo-equipos/desarrollo-equipos.component';
+import { LeccionesAprendidasComponent } from './integracion/lecciones-aprendidas/lecciones-aprendidas.component';
+import { CrearLeccionComponent } from './integracion/crear-leccion/crear-leccion.component';
+import { ListarAdquisicionesComponent } from './adquisiciones/adquisicion/listar-adquisiciones/listar-adquisiciones.component';
+import { CrearAdquisicionesComponent } from './adquisiciones/adquisicion/crear-adquisiciones/crear-adquisiciones.component';
+import { CrearProveedoresComponent } from './adquisiciones/proveedores/crear-proveedores/crear-proveedores.component';
+import { ListarProveedoresComponent } from './adquisiciones/proveedores/listar-proveedores/listar-proveedores.component';
 const appRoutes = [
     {
         path: '',
@@ -57,6 +63,19 @@ const appRoutes = [
                     {
                         path: 'crear',
                         component: CrearComponent
+                    }
+                ]
+            },
+            {
+                path: 'lecciones',
+                children: [
+                    {
+                        path: '',
+                        component: LeccionesAprendidasComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: CrearLeccionComponent
                     }
                 ]
             },
@@ -104,17 +123,48 @@ const appRoutes = [
                     {
                         path: '',
                         component: ListarActividadesComponent
-                    },{
+                    }, {
                         path: 'crear',
                         component: CrearActividadesComponent
                     }
                 ]
-            },{
+            }, {
                 path: 'gestionequipo',
                 component: GestionEquiposComponent
-            },{
+            }, {
                 path: 'desarrolloequipo',
                 component: DesarrolloEquiposComponent
+            }
+        ]
+    },
+    {
+        path: 'adquisiciones',
+        children: [
+            {
+                path: 'adquisiciones',
+                children: [
+                    {
+                        path: '',
+                        component: ListarAdquisicionesComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: CrearAdquisicionesComponent
+                    }
+                ]
+            },
+            {
+                path: 'proveedores',
+                children: [
+                    {
+                        path: '',
+                        component: ListarProveedoresComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: CrearProveedoresComponent
+                    }
+                ]
             }
         ]
     }
@@ -138,7 +188,13 @@ const appRoutes = [
         ListarActividadesComponent,
         CrearActividadesComponent,
         GestionEquiposComponent,
-        DesarrolloEquiposComponent
+        DesarrolloEquiposComponent,
+        LeccionesAprendidasComponent,
+        CrearLeccionComponent,
+        ListarAdquisicionesComponent,
+        CrearAdquisicionesComponent,
+        CrearProveedoresComponent,
+        ListarProveedoresComponent
     ],
     imports: [
         ModalModule.forRoot(),
