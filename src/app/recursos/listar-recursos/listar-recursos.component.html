@@ -1,15 +1,15 @@
 <div class="row">
-  <a routerLink="crear" class="btn btn-success">CREAR</a>
+  <a routerLink="crear" class="btn btn-success mb-3 ml-3">CREAR</a>
 </div>
 <div class="row">
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th>ID</th>
-        <th>Fecha</th>
-        <th>TÍTULO PROYECTO</th>
-        <th>CÓDIGO PROYECTO</th>
-        <th>ACCIONES</th>
+        <th scope="col">ID</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">TÍTULO PROYECTO</th>
+        <th scope="col">CÓDIGO PROYECTO</th>
+        <th scope="col">ACCIONES</th>
       </tr>
     </thead>
     <tbody>
@@ -19,8 +19,7 @@
         <td>Título</td>
         <td>022165465</td>
         <td>
-          <button class="btn btn-success" (click)="miembrosEquipo(template)">MIEMBROS</button>
-          <button class="btn btn-default">EDITAR</button>
+          <button class="btn btn-warning mr-2 text-white">EDITAR</button>
           <button class="btn btn-danger">BORRAR</button>
         </td>
       </tr>
