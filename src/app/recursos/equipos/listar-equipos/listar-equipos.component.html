@@ -19,9 +19,9 @@
         <td>Título</td>
         <td>022165465</td>
         <td>
-          <button class="btn btn-success" (click)="miembrosEquipo(template)">MIEMBROS</button>
-          <button class="btn btn-default">EDITAR</button>
-          <button class="btn btn-danger">BORRAR</button>
+          <button class="btn btn-success mr-2" (click)="miembrosEquipo(template)">MIEMBROS</button>
+          <a class="btn btn-warning mr-2" [routerLink]="['editar', 1]">EDITAR</a>
+          <button class="btn btn-danger mr-2">BORRAR</button>
         </td>
       </tr>
     </tbody>

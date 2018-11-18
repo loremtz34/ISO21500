@@ -12,6 +12,9 @@ import { ListarActividadesComponent } from './actividades/listar-actividades/lis
 import { CrearActividadesComponent } from './actividades/crear-actividades/crear-actividades.component';
 import { GestionEquiposComponent } from './gestion-equipos/gestion-equipos.component';
 import { DesarrolloEquiposComponent } from './desarrollo-equipos/desarrollo-equipos.component';
+import { EditarEquipoComponent } from './equipos/editar-equipo/editar-equipo.component';
+import { EditarActividadesComponent } from './actividades/editar-actividades/editar-actividades.component';
+import { EditarRecursosComponent } from './editar-recursos/editar-recursos.component';
 
 
 const routes: Routes = [
@@ -21,20 +24,23 @@ const routes: Routes = [
   {
     path: 'equipos', children: [
       { path: '', component: ListarEquiposComponent },
-      { path: 'crear', component: CrearEquipoComponent }
+      { path: 'crear', component: CrearEquipoComponent },
+      { path: 'editar/:id', component: EditarEquipoComponent },
     ]
   },
   {
     path: 'recursos', children: [
       { path: '', component: ListarRecursosComponent },
-      { path: 'crear', component: CrearRecursosComponent }
+      { path: 'crear', component: CrearRecursosComponent },
+      { path: 'editar/:id', component: EditarRecursosComponent }
     ]
   },
   { path: 'organizacionproyecto', component: OrganizacionProyectoComponent },
   {
     path: 'actividades', children: [
       { path: '', component: ListarActividadesComponent },
-      { path: 'crear', component: CrearActividadesComponent }
+      { path: 'crear', component: CrearActividadesComponent },
+      { path: 'editar/:id', component: EditarActividadesComponent }
     ]
   }
 ]
@@ -55,7 +61,10 @@ const routes: Routes = [
     ListarActividadesComponent,
     CrearActividadesComponent,
     GestionEquiposComponent,
-    DesarrolloEquiposComponent
+    DesarrolloEquiposComponent,
+    EditarEquipoComponent,
+    EditarActividadesComponent,
+    EditarRecursosComponent
   ]
 })
 export class RecursosRoutingModule { }
