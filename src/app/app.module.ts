@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ModalModule } from 'ngx-bootstrap';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 const appRoutes: Routes = [
     {
         path: '',
@@ -26,10 +27,11 @@ const appRoutes: Routes = [
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent,
+        HomeComponent
     ],
     imports: [
         ModalModule.forRoot(),
+        IonicModule.forRoot(),
         FormsModule,
         ReactiveFormsModule,
         RouterModule.forRoot(

@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MostrarComponent implements OnInit {
 
-  completionPercent: 20;
+  completionPercent: any;
   constructor() { }
 
   ngOnInit() {
+    this.completionPercent = 20;
   }
 
 }
