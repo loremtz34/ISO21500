@@ -8,18 +8,22 @@ import { CrearAdquisicionesComponent } from './adquisicion/crear-adquisiciones/c
 import { ListarProveedoresComponent } from './proveedores/listar-proveedores/listar-proveedores.component';
 import { CrearProveedoresComponent } from './proveedores/crear-proveedores/crear-proveedores.component';
 import { ContratoComponent } from './contrato/contrato.component';
+import { EditarProveedorComponent } from './proveedores/editar-proveedor/editar-proveedor.component';
+import { EditarAdquisicionComponent } from './adquisicion/editar-adquisicion/editar-adquisicion.component';
 
 const routes: Routes = [
   {
     path: 'adquisiciones', children: [
       { path: '', component: ListarAdquisicionesComponent },
-      { path: 'crear', component: CrearAdquisicionesComponent }
+      { path: 'crear', component: CrearAdquisicionesComponent },
+      { path: 'editar', component: EditarAdquisicionComponent }
     ]
   },
   {
     path: 'proveedores', children: [
       { path: '', component: ListarProveedoresComponent },
-      { path: 'crear', component: CrearProveedoresComponent }
+      { path: 'crear', component: CrearProveedoresComponent },
+      { path: 'editar', component: EditarProveedorComponent }
     ]
   },
   {
@@ -39,7 +43,9 @@ const routes: Routes = [
     CrearAdquisicionesComponent,
     CrearProveedoresComponent,
     ListarProveedoresComponent,
-    ContratoComponent
+    ContratoComponent,
+    EditarProveedorComponent,
+    EditarAdquisicionComponent
   ]
 })
 export class AdquisicionRoutingModule { }
