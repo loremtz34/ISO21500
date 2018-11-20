@@ -7,6 +7,7 @@ import { ListarAdquisicionesComponent } from './adquisicion/listar-adquisiciones
 import { CrearAdquisicionesComponent } from './adquisicion/crear-adquisiciones/crear-adquisiciones.component';
 import { ListarProveedoresComponent } from './proveedores/listar-proveedores/listar-proveedores.component';
 import { CrearProveedoresComponent } from './proveedores/crear-proveedores/crear-proveedores.component';
+import { ContratoComponent } from './contrato/contrato.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,9 @@ const routes: Routes = [
       { path: '', component: ListarProveedoresComponent },
       { path: 'crear', component: CrearProveedoresComponent }
     ]
+  },
+  {
+    path: 'contrato', component: ContratoComponent
   }
 ]
 @NgModule({
@@ -34,7 +38,8 @@ const routes: Routes = [
     ListarAdquisicionesComponent,
     CrearAdquisicionesComponent,
     CrearProveedoresComponent,
-    ListarProveedoresComponent
+    ListarProveedoresComponent,
+    ContratoComponent
   ]
 })
 export class AdquisicionRoutingModule { }

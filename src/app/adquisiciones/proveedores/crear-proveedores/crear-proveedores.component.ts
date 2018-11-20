@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'abe-crear-proveedores',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crear-proveedores.component.scss']
 })
 export class CrearProveedoresComponent implements OnInit {
-
-  constructor() { }
+  private todo: FormGroup;
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
   }

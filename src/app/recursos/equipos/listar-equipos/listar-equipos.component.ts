@@ -16,4 +16,7 @@ export class ListarEquiposComponent implements OnInit {
   miembrosEquipo(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template, Object.assign({}, { class: 'gray modal-lg' }));
   }
+  onFilesAdded(event) {
+    console.log(event.target.files[0]);
+  }
 }

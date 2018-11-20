@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ModalModule } from 'ngx-bootstrap';
 import { IonicModule } from '@ionic/angular';
+
 const appRoutes: Routes = [
     {
         path: '',

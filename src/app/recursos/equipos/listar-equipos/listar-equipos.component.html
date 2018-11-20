@@ -21,6 +21,8 @@
         <td>
           <button class="btn btn-success mr-2" (click)="miembrosEquipo(template)">MIEMBROS</button>
           <a class="btn btn-warning mr-2" [routerLink]="['editar', 1]">EDITAR</a>
+          <input type="file" #file style="display: none" (change)="onFilesAdded($event)" multiple />
+          <button class="btn btn-default mr-2" (click)="file.click()">Upload</button>
           <button class="btn btn-danger mr-2">BORRAR</button>
         </td>
       </tr>
