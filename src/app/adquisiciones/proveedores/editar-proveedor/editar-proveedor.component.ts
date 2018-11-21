@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'abe-editar-proveedor',
-  templateUrl: './editar-proveedor.component.html',
+  templateUrl: '../crear-proveedores/crear-proveedores.component.html',
   styleUrls: ['./editar-proveedor.component.scss']
 })
 export class EditarProveedorComponent implements OnInit {

@@ -16,14 +16,14 @@ const routes: Routes = [
     path: 'adquisiciones', children: [
       { path: '', component: ListarAdquisicionesComponent },
       { path: 'crear', component: CrearAdquisicionesComponent },
-      { path: 'editar', component: EditarAdquisicionComponent }
+      { path: 'editar/:id', component: EditarAdquisicionComponent }
     ]
   },
   {
     path: 'proveedores', children: [
       { path: '', component: ListarProveedoresComponent },
       { path: 'crear', component: CrearProveedoresComponent },
-      { path: 'editar', component: EditarProveedorComponent }
+      { path: 'editar/:id', component: EditarProveedorComponent }
     ]
   },
   {
