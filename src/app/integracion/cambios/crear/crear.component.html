@@ -3,7 +3,7 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto"formControlName="titulo">
       </div>
     </div>
     <div class="row">
@@ -13,11 +13,11 @@
       <div class="col-sm-9">
         <div class="row">
           <div class="col-sm-5 br">
-            <input type="text" class="form-control" id="departamento" placeholder="Código">
+            <input type="text" class="form-control" id="departamento" placeholder="Código"formControlName="codigo">
           </div>
           <label for="tituloProyecto" class="col-sm-1 col-form-label">FECHA</label>
           <div class="col-sm-6">
-            <input type="date" class="form-control" id="departamento" placeholder="Fecha">
+            <input type="date" class="form-control" id="departamento" placeholder="Fecha"formControlName="fecha">
           </div>
         </div>
       </div>
@@ -30,13 +30,13 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona Responsable">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona Responsable" formControlName="persona_responsable">
           </div>
         </div>
         <div class="row">
           <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento"formControlName="departamento">
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@
             <td>Alcance</td>
             <td>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"formControlName="alcance">
               </div>
             </td>
             <td><input type="text" class="form-control" name="" id=""></td>
@@ -86,7 +86,7 @@
             <td>Costo</td>
             <td>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"formControlName="costo">
               </div>
             </td>
             <td><input type="text" class="form-control" name="" id=""></td>
@@ -95,7 +95,7 @@
             <td>Plazo</td>
             <td>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"formControlName="plazo">
               </div>
             </td>
             <td><input type="text" class="form-control" name="" id=""></td>
@@ -104,7 +104,7 @@
             <td>Otro</td>
             <td>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"formControlName="otro">
               </div>
             </td>
             <td><input type="text" class="form-control" name="" id=""></td>
@@ -120,7 +120,7 @@
       </div>
       <div class="col-sm-1 br">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="relacion_valorada">
         </div>
       </div>
       <div class="col-sm-3 br">
@@ -128,7 +128,7 @@
       </div>
       <div class="col-sm-1 br">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="plano">
         </div>
       </div>
       <div class="col-sm-3 br">
@@ -136,12 +136,12 @@
       </div>
       <div class="col-sm-1">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="otro_otro">
         </div>
       </div>
     </div>
     <div class="row">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" formControlName="documentacion_escribiendo"></textarea>
     </div>
     <br>
     <h6>Cliente</h6>
@@ -151,7 +151,7 @@
       </div>
       <div class="col-sm-1 br">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="aprueba">
         </div>
       </div>
       <div class="col-sm-3 br">
@@ -159,7 +159,7 @@
       </div>
       <div class="col-sm-1 br">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="aplaza">
         </div>
       </div>
       <div class="col-sm-3 br">
@@ -167,12 +167,12 @@
       </div>
       <div class="col-sm-1">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="rechaza">
         </div>
       </div>
     </div>
     <div class="row">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" formControlName="cliente_escribiendo"></textarea>
     </div>
     <br>
     <h6>Comunicación del estado de cambio</h6>

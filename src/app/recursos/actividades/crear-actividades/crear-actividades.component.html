@@ -3,7 +3,7 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto" formControlName="titulo">
       </div>
     </div>
     <div class="row">
@@ -13,11 +13,11 @@
       <div class="col-sm-9">
         <div class="row">
           <div class="col-sm-5 br">
-            <input type="text" class="form-control" id="departamento" placeholder="">
+            <input type="text" class="form-control" id="departamento" placeholder="" formControlName="codigo">
           </div>
           <label for="tituloProyecto" class="col-sm-1 col-form-label">FECHA</label>
           <div class="col-sm-6">
-            <input type="date" class="form-control" id="departamento" placeholder="">
+            <input type="date" class="form-control" id="departamento" placeholder="" formControlName="fecha">
           </div>
         </div>
       </div>
@@ -30,13 +30,13 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona Responsable">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona Responsable" formControlName="persona_responsable">
           </div>
         </div>
         <div class="row">
           <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento" formControlName="departamento">
           </div>
         </div>
       </div>
@@ -45,69 +45,69 @@
     <div class="row">
       <div class="col-sm-4">
         <label for="departamento" class="col-form-label">Código de la actividad:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="codigo_actividad">
       </div>
       <div class="col-sm-8">
         <label for="departamento" class="col-form-label">Actividad:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="actividad">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
         <label for="departamento" class="col-form-label">Descripción del trabajo:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="descripcion_trabajo">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-2">
         <label for="departamento" class="col-form-label ">Actividad Predecesora:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="actividad_predecesora">
       </div>
       <div class="col-sm-2 nbr">
         <label for="departamento" class="col-form-label">Relaciones Lógicas:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="relaciones_logicas">
       </div>
       <div class="col-sm-2 br">
         <label for="departamento" class="col-form-label">Adelantos o Retrasos:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="adelantos_retrasos">
       </div>
       <div class="col-sm-2">
         <label for="departamento" class="col-form-label">Actividad Sucesora:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="actividad_sucesora">
       </div>
       <div class="col-sm-2">
         <label for="departamento" class="col-form-label">Relaciones Lógicas:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="relaciones_logicas2">
       </div>
       <div class="col-sm-2">
         <label for="departamento" class="col-form-label">Adelantos o Retrasos:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="adelantos_retrasos2">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-4">
         <label for="departamento" class="col-form-label">Nombre y tipo de recurso requerido:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="nombre_recurso">
       </div>
       <div class="col-sm-4 br">
         <label for="departamento" class="col-form-label">Habilidades requeridas:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="habilidades_requeridas">
       </div>
       <div class="col-sm-4">
         <label for="departamento" class="col-form-label">Otros recursos requeridos:</label>
-        <input type="text" class="form-control" id="departamento" placeholder="">
+        <input type="text" class="form-control" id="departamento" placeholder="" formControlName="recursos_requeridos">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
         <label for="" class="col-form-label">Nivel de esfuerzo</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" formControlName="nivel_esfuerzo">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
         <label for="" class="col-form-label">Supuestos</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" formControlName="supuestos">
       </div>
     </div>
     <div class="d-flex flex-row-reverse mt-3">

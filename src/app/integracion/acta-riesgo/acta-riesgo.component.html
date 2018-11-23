@@ -3,7 +3,7 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto" formControlName="titulo">
       </div>
     </div>
     <div class="row">
@@ -14,13 +14,13 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona" formControlName="persona_responsable">
           </div>
         </div>
         <div class="row">
           <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento"formControlName="departamento_riezgo">
           </div>
         </div>
       </div>
@@ -29,21 +29,21 @@
     <div class="row">
       <label for="personaResponsable" class="col-sm-2 col-form-label">Edición previa/version</label>
       <div class="col-sm-4 br">
-        <input type="text" class="form-control" id="personaResponsable" placeholder="Edición previa/version">
+        <input type="text" class="form-control" id="personaResponsable" placeholder="Edición previa/version" formControlName="edicion_previa">
       </div>
       <label for="personaResponsable" class="col-sm-2 col-form-label br">Fecha edición previa</label>
       <div class="col-sm-4">
-        <input type="date" class="form-control" id="personaResponsable" placeholder="Fecha edición previa">
+        <input type="date" class="form-control" id="personaResponsable" placeholder="Fecha edición previa" formControlName="fecha_edicion">
       </div>
     </div>
     <div class="row">
       <label for="personaResponsable" class="col-sm-2 col-form-label">Edición revisada</label>
       <div class="col-sm-4 br">
-        <input type="text" class="form-control" id="personaResponsable" placeholder="Edición revisada">
+        <input type="text" class="form-control" id="personaResponsable" placeholder="Edición revisada" formControlName="edicion_revisada">
       </div>
       <label for="personaResponsable" class="col-sm-2 col-form-label br">Fecha revisión</label>
       <div class="col-sm-4">
-        <input type="date" class="form-control" id="personaResponsable" placeholder="Fecha revisión">
+        <input type="date" class="form-control" id="personaResponsable" placeholder="Fecha revisión" formControlName="fecha_revision">
       </div>
     </div>
     <br>
@@ -55,7 +55,7 @@
     <div class="row">
       <div class="col-sm-12">
         <textarea placeholder="Metodología, procedimientos, fuentes de datos utilizadas, etc." class="form-control" id="exampleFormControlTextarea1"
-          rows="3"></textarea>
+          rows="3"  formControlName="descripcion_proc_gestion"></textarea>
       </div>
     </div>
     <br>
@@ -66,7 +66,7 @@
     <div class="row">
       <div class="col-sm-12">
         <textarea class="form-control" placeholder="Herramientas empleadas, sistemas de estimación, cálculos probabilísticos, etc."
-          id="exampleFormControlTextarea1" rows="3"></textarea>
+          id="exampleFormControlTextarea1" rows="3" formControlName="herramientas_identificacion"></textarea>
       </div>
     </div>
     <br>
@@ -359,7 +359,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" rows="3"></textarea>
+        <textarea class="form-control" rows="3" formControlName="presupuesto_riesgo"></textarea>
       </div>
     </div>
     <br>
@@ -368,7 +368,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <textarea class="form-control" rows="3" placeholder="Condiciones de ejecución de las acciones de contingencia"></textarea>
+        <textarea class="form-control" rows="3" placeholder="Condiciones de ejecución de las acciones de contingencia" formControlName="protocolo_contingencia"></textarea>
       </div>
     </div>
     <br>
@@ -378,7 +378,7 @@
     <div class="row">
       <div class="col-sm-12">
         <textarea class="form-control" placeholder="Descripción del proceso de revisión iterativa de los riesgos en el proyecto, periodicidad de las revisiones, etc."
-          id="exampleFormControlTextarea1" rows="3"></textarea>
+          id="exampleFormControlTextarea1" rows="3" formControlName="protocolo_riesgos"></textarea>
       </div>
     </div>
     <br>
@@ -388,7 +388,7 @@
     <div class="row">
       <div class="col-sm-12">
         <textarea class="form-control" placeholder="Descripción del proceso de comunicación de eventos de riesgos, ver plantilla G_ISO21500_Rsk_P06_Comunicacion Riesgos_V1"
-          id="exampleFormControlTextarea1" rows="3"></textarea>
+          id="exampleFormControlTextarea1" rows="3" formControlName="protocolo_comunicacion"></textarea>
       </div>
     </div>
     <br>
@@ -398,7 +398,7 @@
     <div class="row">
       <div class="col-sm-12">
         <textarea class="form-control" placeholder="Descripción del proceso de control de la implantación y efectividad del plan de riesgos"
-          id="exampleFormControlTextarea1" rows="3"></textarea>
+          id="exampleFormControlTextarea1" rows="3" formControlName="protocolo_auditoria"></textarea>
       </div>
     </div>
     <div class="d-flex flex-row-reverse mt-3">

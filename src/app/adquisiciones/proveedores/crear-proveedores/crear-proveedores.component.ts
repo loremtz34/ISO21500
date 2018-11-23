@@ -8,9 +8,25 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class CrearProveedoresComponent implements OnInit {
   private todo: FormGroup;
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, ) {
+    this.todo = this.formBuilder.group({
+  		nombre:'',
+  		nombre_empresa:'',
+  		direccion:'',
+  		tipo_servicio:'',
+  		telefono:'',
+  		email:'', 
+  		nit:'',
+
+
+
+
+    });
+  }
 
   ngOnInit() {
   }
-
+  logForm() {
+    console.log(this.todo.value);
+  }
 }

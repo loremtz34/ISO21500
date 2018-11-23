@@ -5,7 +5,7 @@
         <div class="form-group row">
           <label for="inputDate" class="col-sm-5 col-form-label">Código Identificación Proyecto</label>
           <div class="col-sm-7">
-            <input type="text" class="form-control" id="">
+            <input type="text" class="form-control" id="" formControlName="codigo">
           </div>
         </div>
       </div>
@@ -13,7 +13,7 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto" formControlName="titulo">
       </div>
     </div>
     <div class="row">
@@ -24,13 +24,13 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona" formControlName="persona_responsable">
           </div>
         </div>
         <div class="row">
           <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento" formControlName="departamento">
           </div>
         </div>
       </div>
@@ -43,13 +43,13 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona / Comité</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona" formControlName="persona_comite">
           </div>
         </div>
         <div class="row">
           <label for="departamento" class="col-sm-3 col-form-label">Firma</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento" formControlName="firma_persona_comite">
           </div>
         </div>
       </div>
@@ -159,20 +159,20 @@
     <div class="row">
       <h6><b>Gestión del cambio:</b><i>especificar el proceso de gestión del cambio o anexar el plan de gestión del
           cambio</i></h6>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" formControlName="gestion_cambio">
     </div>
     <br>
     <div class="row">
       <h6><b>Contabilidad de estado y métricas de configuración:</b> <i>espeficicar el repositorio de información,
           el reporte de estado y métricas a usar</i></h6>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" formControlName="contabilidad_estado">
     </div>
     <br>
     <div class="row">
       <h6><b>Verificación y auditorías de configuración:</b><i>especificar como se asegurará la composición de los
           items de configuración, y como se asegurará el correcto registro, evaluación, aprovación</i></h6>
       <div class="col-sm-12">
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" formControlName="verificacion_auditoria">
       </div>
     </div>
     <div class="d-flex flex-row-reverse mt-3">

@@ -5,7 +5,7 @@
         <div class="form-group row">
           <label for="inputDate" class="col-sm-5 col-form-label">Código Identificación Proyecto</label>
           <div class="col-sm-7">
-            <input type="text" class="form-control" id="">
+            <input type="text" class="form-control" id="" formControlName="codigo">
           </div>
         </div>
       </div>
@@ -13,7 +13,7 @@
     <div class="row">
       <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto" formControlName="titulo">
       </div>
     </div>
     <div class="row">
@@ -24,13 +24,13 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona" formControlName="persona_responsable">
           </div>
         </div>
         <div class="row">
           <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento" formControlName="departamento">
           </div>
         </div>
       </div>
@@ -43,13 +43,13 @@
         <div class="row">
           <label for="personaResponsable" class="col-sm-3 col-form-label">Persona / Comité</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona" formControlName="persona_comite">
           </div>
         </div>
         <div class="row">
           <label for="departamento" class="col-sm-3 col-form-label">Firma</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento" formControlName="firma_persona_comite">
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
       <b>OBJETIVOS Y ALCANCE DEL PLAN</b>
     </div>
     <div class="row">
-      <textarea name="" id="" rows="5" class="form-control" placeholder="Si existen o son decisiones que no pueden tomarse en el momento de realizar el plan director del proyecto"></textarea>
+      <textarea name="" id="" rows="5" class="form-control" placeholder="Si existen o son decisiones que no pueden tomarse en el momento de realizar el plan director del proyecto" formControlName="objetivos_plan"></textarea>
     </div>
     <br>
     <div class="row">
@@ -174,7 +174,7 @@
       </label>
     </div>
     <div class="row">
-      <textarea name="" rows="5" class="form-control"></textarea>
+      <textarea name="" rows="5" class="form-control" formControlName="procedimiento_cambios"></textarea>
     </div>
     <div class="row">
       <label for="" class="col-form-label">
@@ -184,7 +184,7 @@
     <div class="row">
       <label for="" class="col-sm-3">Código del documento</label>
       <div class="col-sm-3 br">
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" formControlName="codigo_documento">
       </div>
       <label for="" class="col-form-label col-sm-3 br">Fecha aprobación</label>
       <div class="col-sm-3">
@@ -199,7 +199,7 @@
       </label>
     </div>
     <div class="row">
-      <textarea name="" rows="5" class="form-control"></textarea>
+      <textarea name="" rows="5" class="form-control" formControlName="procedimiento_comunicacion"></textarea>
     </div>
     <br>
 
@@ -209,7 +209,7 @@
       </label>
     </div>
     <div class="row">
-      <textarea name="" rows="5" class="form-control"></textarea>
+      <textarea name="" rows="5" class="form-control" formControlName="procedimiento_configuracion"></textarea>
     </div>
     <br>
 
@@ -219,7 +219,7 @@
       </label>
     </div>
     <div class="row">
-      <textarea name="" rows="5" class="form-control"></textarea>
+      <textarea name="" rows="5" class="form-control" formControlName="procedimiento_auditoria"></textarea>
     </div>
     <br>
     <h6>DOCUMENTOS Y LÍNEAS BASE ADJUNTAS A ESTE PLAN DIRECTOR</h6>
