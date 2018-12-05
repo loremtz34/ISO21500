@@ -28,7 +28,8 @@ const routes: Routes = [
       { path: 'editar/:id', component: EditarProveedorComponent },
       {path: 'seleccionados', component: ProveedoresSeleccionadosComponent},
       {path: 'seleccionados/:id/contratos', component: ListarContratosProveedoresComponent},
-      {path: 'seleccionados/:id/contratos/crear', component: ContratoComponent}
+      {path: 'seleccionados/:id/contratos/crear', component: ContratoComponent},
+      {path: 'seleccionados/editar/:id', component: EditarProveedorComponent}
     ]
   },
   
