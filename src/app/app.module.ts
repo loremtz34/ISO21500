@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ModalModule } from 'ngx-bootstrap';
 import { IonicModule } from '@ionic/angular';
+import { ProveedoresSeleccionadosComponent } from './adquisiciones/proveedores/proveedores-seleccionados/proveedores-seleccionados.component';
+import { ListarContratosProveedoresComponent } from './adquisiciones/proveedores/listar-contratos-proveedores/listar-contratos-proveedores.component';
 
 const appRoutes: Routes = [
     {

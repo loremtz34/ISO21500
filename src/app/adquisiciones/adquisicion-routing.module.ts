@@ -10,6 +10,8 @@ import { CrearProveedoresComponent } from './proveedores/crear-proveedores/crear
 import { ContratoComponent } from './contrato/contrato.component';
 import { EditarProveedorComponent } from './proveedores/editar-proveedor/editar-proveedor.component';
 import { EditarAdquisicionComponent } from './adquisicion/editar-adquisicion/editar-adquisicion.component';
+import { ProveedoresSeleccionadosComponent } from './proveedores/proveedores-seleccionados/proveedores-seleccionados.component';
+import { ListarContratosProveedoresComponent } from './proveedores/listar-contratos-proveedores/listar-contratos-proveedores.component';
 
 const routes: Routes = [
   {
@@ -23,12 +25,13 @@ const routes: Routes = [
     path: 'proveedores', children: [
       { path: '', component: ListarProveedoresComponent },
       { path: 'crear', component: CrearProveedoresComponent },
-      { path: 'editar/:id', component: EditarProveedorComponent }
+      { path: 'editar/:id', component: EditarProveedorComponent },
+      {path: 'seleccionados', component: ProveedoresSeleccionadosComponent},
+      {path: 'seleccionados/:id/contratos', component: ListarContratosProveedoresComponent},
+      {path: 'seleccionados/:id/contratos/crear', component: ContratoComponent}
     ]
   },
-  {
-    path: 'contrato', component: ContratoComponent
-  }
+  
 ]
 @NgModule({
   imports: [
@@ -45,7 +48,9 @@ const routes: Routes = [
     ListarProveedoresComponent,
     ContratoComponent,
     EditarProveedorComponent,
-    EditarAdquisicionComponent
+    EditarAdquisicionComponent,
+    ProveedoresSeleccionadosComponent,
+    ListarContratosProveedoresComponent
   ]
 })
 export class AdquisicionRoutingModule { }
