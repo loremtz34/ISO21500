@@ -19,13 +19,13 @@ import { EditarRecursosComponent } from './editar-recursos/editar-recursos.compo
 
 const routes: Routes = [
   { path: '', redirectTo: 'equipos', pathMatch: 'full' },
-  { path: 'gestionequipo', component: GestionEquiposComponent },
-  { path: 'desarrolloequipo', component: DesarrolloEquiposComponent },
   {
     path: 'equipos', children: [
       { path: '', component: ListarEquiposComponent },
       { path: 'crear', component: CrearEquipoComponent },
       { path: 'editar/:id', component: EditarEquipoComponent },
+      { path: 'desarrollo/:id', component: DesarrolloEquiposComponent },
+      { path: 'gestion/:id', component: GestionEquiposComponent },
     ]
   },
   {
