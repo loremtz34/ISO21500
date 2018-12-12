@@ -1,0 +1,42 @@
+<div class="container">
+  <form class="table-form" [formGroup]="todo" (ngSubmit)="logForm()">
+    <div class="row">
+      <div class="col offset-md-6">
+        <div class="form-group row">
+          <label for="inputDate" class="col-sm-5 col-form-label">Código Identificación Proyecto</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="" formControlName="codigo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <label for="tituloProyecto" class="col-sm-3 col-form-label">TITULO DEL PROYECTO</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="tituloProyecto" placeholder="Titulo del Proyecto" formControlName="titulo">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        Director/Rpble. del Proyecto
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <label for="personaResponsable" class="col-sm-3 col-form-label">Persona</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="personaResponsable" placeholder="Persona" formControlName="persona_responsable">
+          </div>
+        </div>
+        <div class="row">
+          <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="departamento" placeholder="Departamento" formControlName="departamento">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row-reverse mt-3">
+      <button type="submit" class="btn btn-success" style="min-width:128px">Enviar</button>
+    </div>
+  </form>
+</div>

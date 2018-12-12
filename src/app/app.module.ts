@@ -8,6 +8,8 @@ import { ModalModule } from 'ngx-bootstrap';
 import { IonicModule } from '@ionic/angular';
 import { ProveedoresSeleccionadosComponent } from './adquisiciones/proveedores/proveedores-seleccionados/proveedores-seleccionados.component';
 import { ListarContratosProveedoresComponent } from './adquisiciones/proveedores/listar-contratos-proveedores/listar-contratos-proveedores.component';
+import { CrearProyectoComponent } from './integracion/crear-proyecto/crear-proyecto.component';
+import { VerContratoComponent } from './adquisiciones/ver-contrato/ver-contrato.component';
 
 const appRoutes: Routes = [
     {

@@ -14,9 +14,11 @@ import { CrearLeccionComponent } from './crear-leccion/crear-leccion.component';
 import { ActaRiesgoComponent } from './acta-riesgo/acta-riesgo.component';
 import { EditarCambioComponent } from './cambios/editar-cambio/editar-cambio.component';
 import { EditarLeccionComponent } from './editar-leccion/editar-leccion.component';
+import { CrearProyectoComponent } from './crear-proyecto/crear-proyecto.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'actaconstitucion', pathMatch: 'full' },
+  {path: 'crearproyecto', component: CrearProyectoComponent},
   { path: 'actaconstitucion', component: ActaConstitucionComponent },
   { path: 'planificacion', component: PlanificacionProyectoComponent },
   { path: 'gestionconfiguno', component: GestionConfiguracionUnoComponent },
@@ -57,7 +59,8 @@ const routes: Routes = [
     LeccionesAprendidasComponent,
     CrearLeccionComponent,
     EditarCambioComponent,
-    EditarLeccionComponent
+    EditarLeccionComponent,
+    CrearProyectoComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
